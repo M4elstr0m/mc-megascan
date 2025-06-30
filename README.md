@@ -11,4 +11,4 @@ Put the `megascan.py` file in your `minescript` folder
 
 THIS IS A MODULE THAT CAN BE USED IN SCRIPTS. THIS SHOULD NOT BE RUN DIRECTLY.
 
-## ![Work](https://img.shields.io/badge/WORK-in%20PROGRESS-orange?style=for-the-badge)
+## ![Work](https://img.shields.io/badge/READ%20ME-IN%20PROGRESS-orange?style=for-the-badge)
