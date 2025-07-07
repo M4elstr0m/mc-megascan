@@ -1,4 +1,4 @@
-# Overview
+# 🌍 Overview
 <b>mc-megascan</b> is Python module to store a huge amount of Minecraft blocks using Minescript. It has a strong docstring within its source code, maintaining readability and accessibility for anyone aiming to use it in their projects.<br>
 
 This was conceived for Minescript v4.0
@@ -30,11 +30,10 @@ import megascan as mg
 
 mega = mg.Megascan()
 ```
+## ![Work](https://img.shields.io/badge/READ%20ME-IN%20PROGRESS-orange?style=for-the-badge)
 
 ## 🗒️ Credits
 
 <b>[M4elstr0m](https://github.com/M4elstr0m)</b> for conceiving this module (<b>mc-megascan</b>) you are currently consulting on Github
 
 <b>[maxuser](https://github.com/maxuser0)</b> for creating the wonderful <b>[Minescript](https://minescript.net/)</b> mod
-
-## ![Work](https://img.shields.io/badge/READ%20ME-IN%20PROGRESS-orange?style=for-the-badge)
