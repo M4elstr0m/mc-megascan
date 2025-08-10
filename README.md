@@ -49,7 +49,7 @@ mega = mg.Megascan()
 
 `Megascan` instance have multiple methods, not all of these will modify its attribute:
 
-<b>Megascan.new()</b>
+#### <b>Megascan.new()</b>
 
 This method scans all the blocks within a specified radius from a world point and returns it as a dictionary without replacing current `mega` instance's content
 
@@ -58,13 +58,13 @@ coordinates = mg.PlayerCoordinates()
 print(mega.new(player_pos=coordinates, radius_x=10, radius_y=2, radius_z=10))
 ```
 
-`player_pos` is a tuple corresponding to player's coordinates (x, y, z); Refer to <b>[PlayerCoordinates()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#L161)</b> in order to get these
+`player_pos` is a tuple corresponding to player's coordinates (x, y, z); Refer to <b>[PlayerCoordinates()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#playercoordinates)</b> in order to get these
 
 `radius_x` , `radius_y` and `radius_z` already have default values (respectively: 10, 2 and 10) if you let them empty, but you can fill it with your own integer values
 
 *You are also able to change these default values in `megascan.py` in the [settings section](https://github.com/M4elstr0m/mc-megascan/blob/main/megascan.py#L34)* 
 
-<b>Megascan.refresh()</b>
+#### <b>Megascan.refresh()</b>
 
 This method does basically the same as `mega.new()` but replaces Megascan object's content by the new scan
 
@@ -74,9 +74,9 @@ mega.refresh(player_pos=coordinates, radius_x=10, radius_y=2, radius_z=10)
 print(mega.content)
 ```
 
-Parameters follow the same guidelines as <b>[Megascan.new()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#L52)</b>
+Parameters follow the same guidelines as <b>[Megascan.new()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#megascannew)</b>
 
-<b>Megascan.extend()</b>
+#### <b>Megascan.extend()</b>
 
 This method has a similar behavior as `mega.refresh()` but it will not strictly replace Megascan object's content. Instead, it will merge the old content with the new scan in a suppressive way, which means that new entries will overwrite old entries for the same coordinates
 
@@ -88,7 +88,7 @@ mega.extend(player_pos=coordinates, radius_x=10, radius_y=2, radius_z=10)
 print(mega.content)
 ```
 
-<b>Megascan.get()</b>
+#### <b>Megascan.get()</b>
 
 Returns the Megascan object's content as a dictionary; Allows user to view `mega.content` indirectly
 
@@ -98,7 +98,7 @@ mega.refresh(coordinates)
 print(mega.get())
 ```
 
-<b>Megascan.amount()</b>
+#### <b>Megascan.amount()</b>
 
 Returns the amount of blocks/coordinates contained in the Megascan object
 
@@ -108,7 +108,7 @@ mega.refresh(coordinates)
 print(mega.amount())
 ```
 
-<b>Megascan.search()</b>
+#### <b>Megascan.search()</b>
 
  Searches the Megascan for specific coordinates and returns the results of the search (a `dict` associating coordinates with block type)
 
@@ -120,7 +120,7 @@ print(mega.search(coordinates_list=[(0,64,0)]))
 
 `coordinates_list` is a list of tuples (a list of Minecraft block coordinates)
 
-<b>Megascan.reverse_search()</b>
+#### <b>Megascan.reverse_search()</b>
 
  Reverse-searches the Megascan for specific block types and returns once again a `dict` associating coordinates with block type
 
@@ -134,7 +134,7 @@ print(mega.reverse_search(block_list=["minecraft:grass"]))
 
 This is basically how <b>[mc-MetalDetector](https://github.com/M4elstr0m/mc-metaldetector)</b> was made
 
-<b>Magic Methods</b>
+#### <b>Magic Methods</b>
 
 `print(mega)` is equivalent to `print(mega.get())` or `print(mega.content)`
 
@@ -144,7 +144,7 @@ mega.refresh(coordinates)
 print(mega)
 ```
 
-`mega_1 + mega_2` merges two Megascan objects in a suppressive way (Refer to <b>[Megascan.extend()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#L79)</b>) in the first one
+`mega_1 + mega_2` merges two Megascan objects in a suppressive way (Refer to <b>[Megascan.extend()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#megascanextend)</b>) in the first one
 
 ```python
 coordinates = mg.PlayerCoordinates()
@@ -158,7 +158,7 @@ print(mega_1)
 
 ---
 
-<b>PlayerCoordinates()</b>
+#### <b>PlayerCoordinates()</b>
 
 Returns player's in-game coordinates as a tuple of 3 integers
 
@@ -167,7 +167,7 @@ import megascan as mg
 coordinates = mg.PlayerCoordinates()
 ```
 
-<b>debug_echo()</b>
+#### <b>debug_echo()</b>
 
 Displays an in-game given text as a debug log from Megascan
 
