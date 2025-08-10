@@ -58,7 +58,7 @@ coordinates = mg.PlayerCoordinates()
 print(mega.new(player_pos=coordinates, radius_x=10, radius_y=2, radius_z=10))
 ```
 
-`player_pos` is a tuple corresponding to player's coordinates (x, y, z); Refer to <b>[PlayerCoordinates()](https://github.com/M4elstr0m/mc-megascan/blob/main/README.md#L161?)</b> in order to get these
+`player_pos` is a tuple corresponding to player's coordinates (x, y, z); Refer to <b>[PlayerCoordinates()](https://github.com/M4elstr0m/mc-megascan/README.md#L161?)</b> in order to get these
 
 `radius_x` , `radius_y` and `radius_z` already have default values (respectively: 10, 2 and 10) if you let them empty, but you can fill it with your own integer values
 
