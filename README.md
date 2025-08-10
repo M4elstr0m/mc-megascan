@@ -25,11 +25,30 @@ You can create any kind of scripts for Minescript using mc-megascan, this is lik
 
 ## 📖 Documentation & Examples
 
+As any other Python module, you must import `megascan` into your `.py` script to start using it
+
+*If you feel uncomfortable with Python at this step, I suggest you to read [Python's documentation](https://docs.python.org/3/) instead*
+
 ```python
 import megascan as mg
-
-mega = mg.Megascan()
 ```
+
+---
+
+*In this section, `mega` will be the name of our Megascan's instance; Therefore `mega.content` corresponds to the `content` attribute of our `mega` object, which is an instance of `Megascan`*
+
+As said earlier, <b>mc-megascan</b> is useful to store a consequent amount of blocks in a single variable, to perform searches afterwards.
+
+When initializing a new Megascan object/instance, its content, accessible at `Megascan.content`, is a `dict` and will be empty at first 
+
+```python
+mega = megascan.Megascan()
+```
+
+
+
+
+
 ## ![Work](https://img.shields.io/badge/READ%20ME-IN%20PROGRESS-orange?style=for-the-badge)
 
 ## 🗒️ Credits
